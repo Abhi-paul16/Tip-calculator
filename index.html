@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip-calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="logo.svg" alt="">
+
+    </header>
+
+    <div class="wrraper">
+        <div class="tip-calc">
+            <img class="dollar" src="icon-dollar.svg" alt="">
+            <form onsubmit="return false">
+
+                <label>Bill</label> <br>
+                <input class="input" id="bill" type="number" placeholder="0">
+            </form>
+            <div class="tip-percent">
+                <button class="tip" id="tip-1">5</button>
+                <button class="tip">10</button>
+                <button class="tip">15</button>
+                <button class="tip">25</button>
+                <button class="tip">50</button>
+                <input type="number" id="custom" value="" placeholder=" custom%">
+
+            </div>
+
+            <div class="peoples">
+
+                <img class="person" src="icon-person.svg" alt="">
+                <form onsubmit="return false">
+
+                    <label for="">Number of peoples</label> <br>
+                    <input class="input" id="no-of-peoples" type="number" value="1" min="1" placeholder="0">
+                </form>
+            </div>
+
+        </div>
+        <div class="tip-show-card">
+            <div class="tip-amount">
+                <h3>Tip Amount <br> <span>/person</span> </h3>
+                <h2 id="tip-per-person">$0.00</h2>
+            </div>
+            <div class="tip-amount tip-amount-total">
+                <h3>Total <br> <span> /person </span></h3>
+                <h2 id="total-per-person"> $0.00</h2>
+            </div>
+            <button id="reset">RESET</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Coded By
+            <a href="https://www.youtube.com/channel/UCRw7mOOoihlGwkHsSssTCQw"> Abhishek Pal </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
